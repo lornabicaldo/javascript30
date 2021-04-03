@@ -1,6 +1,7 @@
 :root {
   --primary-color: #1bf72d;
   --secondary-color: #f8d407;
+  --head-font: "Dela Gothic One", cursive;
 }
 
 .hero,
@@ -13,6 +14,7 @@
   text-align: center;
   font-size: 45px;
   padding: 10px;
+  font-family: cursive;
 }
 
 .panel {
@@ -26,7 +28,7 @@
   position: absolute;
   transform: translate(-50%, -50%);
   font-size: 6em;
-  font-family: "Dela Gothic One", cursive;
+  font-family: var(--head-font);
 }
 
 .tpanel h2:nth-child(1) {
@@ -41,20 +43,40 @@
 
 .primary-link {
   border-radius: 4px;
-  padding: 18px;
+  padding: 20px;
   text-decoration: none;
   color: orangered;
-  border-style: dashed solid;
   box-shadow: 10px 10px var(--primary-color);
-  font-size: 35px;
   text-align: center;
-  font-family: "Dela Gothic One", cursive;
+  font-family: var(--head-font);
   transition: all 100ms ease-in-out;
 }
 
 .primary-link:hover {
   color: var(--secondary-color);
+  background: #dc03f8;
+}
+
+.secondary-link {
+  border-radius: 30px 0px 30px 0px;
+  padding: 18px;
+  text-decoration: none;
+  color: var(--secondary-color);
   background: orangered;
+  font-size: 30px;
+  text-align: center;
+  font-family: var(--head-font);
+  box-shadow: 10px 10px var(--primary-color);
+}
+
+.secondary-link:hover {
+  color: var(--primary-color);
+  background: none;
+}
+
+.content h5 {
+  font-family: var(--head-font);
+  color: var(--primary-color);
 }
 
 @keyframes animate {
