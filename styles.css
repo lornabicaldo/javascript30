@@ -1,0 +1,81 @@
+.hero {
+  background: #000;
+}
+
+.hero h1 {
+  color: #f8d407;
+  text-align: center;
+  font-size: 45px;
+  padding: 10px;
+}
+
+.panel {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 20vh;
+}
+
+.tpanel h2 {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  font-size: 6em;
+  font-family: "Dela Gothic One", cursive;
+}
+
+.tpanel h2:nth-child(1) {
+  color: transparent;
+  -webkit-text-stroke: 2px #1bf72d;
+}
+
+.tpanel h2:nth-child(2) {
+  color: #1bf72d;
+  animation: animate 3s ease-in-out infinite;
+}
+
+@keyframes animate {
+  0%,
+  100% {
+    clip-path: polygon(
+      0% 63%,
+      13% 58%,
+      24% 51%,
+      37% 44%,
+      53% 43%,
+      65% 48%,
+      79% 55%,
+      90% 62%,
+      100% 58%,
+      99% 100%,
+      1% 100%
+    );
+  }
+  50% {
+    clip-path: polygon(
+      100% 54%,
+      88% 49%,
+      76% 44%,
+      63% 39%,
+      51% 39%,
+      36% 44%,
+      26% 53%,
+      16% 60%,
+      7% 59%,
+      0% 53%,
+      1% 99%,
+      100% 99%
+    );
+  }
+}
+
+@media (max-width: 576px) {
+  .tpanel h2 {
+    font-size: 1.5em;
+  }
+
+  .hero h1,
+  h4 {
+    font-size: 1em;
+    padding: 0px;
+  }
+}
