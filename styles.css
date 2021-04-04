@@ -124,4 +124,8 @@
     font-size: 1em;
     padding: 0px;
   }
+
+  .container footer {
+    font-size: 0.7em;
+  }
 }
